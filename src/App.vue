@@ -1,17 +1,20 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
+import { ref, onMounted } from 'vue';
+import AuButton from './components/Button/Button.vue';
+import { ButtonInstance } from './components/Button/type';
+const buttonRef = ref<ButtonInstance>();
+onMounted(() => {
+  console.log(buttonRef.value);
+});
+defineOptions({
+  name: 'AuButton',
+});
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <au-button ref="buttonRef" plain disabled>测试button</au-button>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
