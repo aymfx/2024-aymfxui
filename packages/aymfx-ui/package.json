@@ -1,0 +1,9 @@
+{
+  "name": "aymfx-ui",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "peerDependencies": {
+    "vue": "^3.4.5"
+  }
+}
