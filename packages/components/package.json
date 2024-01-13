@@ -6,6 +6,7 @@
   "main": "index.ts",
   "module": "index.ts",
   "peerDependencies": {
-    "vue": "^3.4.5"
+    "vue": "^3.4.5",
+    "element-plus": "^2.4.4"
   }
 }
