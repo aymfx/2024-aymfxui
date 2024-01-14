@@ -1,9 +1,32 @@
 {
   "name": "aymfx-ui",
-  "private": true,
+  "version": "0.0.1",
+  "main": "lib/packages/components/src/index.js",
+  "module": "es/packages/components/src/index.mjs",
+  "types": "es/packages/components/src/index.d.ts",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "keywords": [
+    "aymfx-ui",
+    "vue3组件库",
+    "element-plus"
+  ],
   "license": "MIT",
-  "main": "index.ts",
   "peerDependencies": {
-    "vue": "^3.4.5"
+    "element-plus": "^2.3.6",
+    "vue": "^3.2.47"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aymfxhub/aymfx-ui.git"
+  },
+  "homepage": "https://aymfxhub.github.io/aymfx-ui/",
+  "bugs": {
+    "url": "https://github.com/aymfxhub/aymfx-ui/issues"
   }
 }

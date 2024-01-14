@@ -1,11 +1,12 @@
 {
   "name": "@aymfx-ui/components",
-  "version": "0.0.1",
-  "license": "MIT",
-  "description": "组件库",
-  "main": "index.ts",
-  "module": "index.ts",
-  "peerDependencies": {
-    "vue": "^3.4.5"
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "build:libs": "node script/build.js"
   }
 }
