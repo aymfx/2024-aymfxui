@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev:play": "pnpm --filter play run dev"
+    "dev:play": "pnpm --filter play run dev",
+    "build": "vite build --config build.config.ts"
   },
   "author": "ly",
   "dependencies": {
@@ -22,9 +23,13 @@
     "vue": "^3.4.5"
   },
   "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@vikingmute/v-element": "^0.0.4",
     "@vitejs/plugin-vue": "^5.0.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
     "sass": "^1.69.7",
     "typescript": "^5.2.2",
-    "vite": "^5.0.11"
+    "vite": "^5.0.11",
+    "vite-plugin-dts": "^3.7.0"
   }
 }

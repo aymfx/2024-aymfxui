@@ -4,7 +4,8 @@
     "composite": true,
     "jsx": "preserve",
     "lib": ["ES2018", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "./"
   },
   "include": ["packages", "typings/components.d.ts", "typings/env.d.ts"],
   "exclude": ["node_modules", "**/dist", "**/__tests__/**/*", "**/*.md"]

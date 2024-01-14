@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import aymfxUI from 'aymfx-ui';
+import aymfxUI from '../../dist/aymfxui';
 import './style.css';
 import App from './App.vue';
 
