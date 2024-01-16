@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import './styles.scss';
+import { ElButton } from "element-plus";
 import type { ButtonProps } from './button';
 
-const props = withDefaults(defineProps<ButtonProps>(), {
+withDefaults(defineProps<ButtonProps>(), {
   nativeType: 'button',
 });
+
 defineOptions({
   name: 'AuButton',
 });
 </script>
 <template>
-  <button class="au-button" :type="nativeType">
+  <el-button type="primary">
     <slot></slot>
-  </button>
+  </el-button>
 </template>

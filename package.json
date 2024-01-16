@@ -10,15 +10,15 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev:play": "pnpm --filter play run dev",
-    "build": "vite build --config build.config.ts"
+    "dev": "pnpm --filter play run dev",
+    "build": "vue-tsc --noEmit && vite build",
+    "publish": "pnpm run -C dist publish"
   },
   "author": "ly",
   "dependencies": {
     "@aymfx-ui/components": "workspace:*",
     "@aymfx-ui/hooks": "workspace:*",
     "@aymfx-ui/utils": "workspace:*",
-    "aymfx-ui": "workspace:*",
     "element-plus": "^2.4.4",
     "vue": "^3.4.5"
   },
@@ -27,6 +27,7 @@
     "@vikingmute/v-element": "^0.0.4",
     "@vitejs/plugin-vue": "^5.0.2",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "release-it": "^17.0.1",
     "sass": "^1.69.7",
     "typescript": "^5.2.2",
     "vite": "^5.0.11",

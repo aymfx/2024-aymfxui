@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
-import aymfxUI from '../../dist/aymfxui';
+import ElementPlus from 'element-plus';
+import 'element-plus/dist/index.css';
+import aymfxUI from '../../dist';
 import './style.css';
 import App from './App.vue';
 
-createApp(App).use(aymfxUI).mount('#app');
+createApp(App).use(ElementPlus).use(aymfxUI).mount('#app');

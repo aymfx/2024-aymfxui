@@ -6,4 +6,3 @@ export const AuButton = withInstall(Button);
 export default AuButton;
 
 export * from './src/button'
-export type { ButtonInstance } from './src/instance'

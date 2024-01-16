@@ -4,8 +4,9 @@
     "composite": true,
     "lib": ["ESNext"],
     "types": ["node"],
+    "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["packages/aymfx-ui/package.json"],
+  "include": ["packages/aymfx-ui/package.json", "command/build.ts"],
   "exclude": ["**/__tests__/**", "**/tests/**", "**/dist"]
 }
