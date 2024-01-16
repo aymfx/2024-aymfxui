@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import app from "./styles/app.module.css";
-
-console.log(app);
+import { msg } from 'virtual:my-module'
+console.log(msg)
+const docs = 'I like import.meta.env.MODE'
+console.log(docs);
 
 </script>
 
