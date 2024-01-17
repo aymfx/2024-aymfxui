@@ -1,0 +1,57 @@
+{
+  "name": "aymfx-ui",
+  "type": "module",
+  "description": "这是基于element-plus的组件库",
+  "author": "aymfx",
+  "license": "MIT",
+  "version": "0.0.2",
+  "keywords": [
+    "Component",
+    "UI",
+    "Vue3"
+  ],
+  "homepage": "https://github.com/aymfx/2024-aymfxui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aymfx/2024-aymfxui"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "dist/index.css"
+  ],
+  "main": "./dist/umd/aymfx-ui.umd.cjs",
+  "module": "./dist/es/aymfx-ui.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es/aymfx-ui.js",
+      "require": "./dist/umd/aymfx-ui.umd.cjs",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
+    }
+  },
+  "scripts": {
+    "dev": "pnpm --filter play run dev",
+    "build": "pnpm build:es && pnpm build:umd",
+    "build:es": "vite build --config vite.es.config.ts",
+    "build:umd": "vite build --config vite.umd.config.ts"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.11",
+    "element-plus": "^2.5.1"
+  },
+  "devDependencies": {
+    "@aymfx-ui/components": "workspace:*",
+    "@types/node": "^20.11.5",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.1",
+    "vue-tsc": "^1.8.25"
+  }
+}
